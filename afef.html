@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>villes</title>
+</head>
+<body>
+    <input type="text" id="inputTextes" value="Entrez votre texte">
+    <button onclick="ajouterTexte()"> Ajouter </button>
+    <button onclick="supprimerTextes()">supprimer</button>
+   
+    <p id="texteAjoute"></p>
+    
+    <script>
+        function ajouterTexte() {
+          var texteAAjouter = document.getElementById('inputTextes').value;
+          var texteAjouteElement = document.getElementById('texteAjoute');
+          texteAjouteElement.textContent = texteAAjouter;
+        }
+        function supprimerTextes(){
+            var texteAjouteElement = document.getElementById('texteAjoute');
+            texteAjouteElement.textContent = '';
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Admis</title>
+</head>
+<body>
+    <input type="text" id="entrer votre texte" value="enter votre texte">
+    <button onclick="ajoutertexte()">Ajouter</button>
+    <button onclick="supprimertexte()">Supprimer</button>
+   <p id="AjouterTexte">
+    <script>
+        function ajoutertexte(){
+            var Variable1=document.getElementById('inputtexte').value;
+            var AjouterTexteElement=document.getElementById('AjouterTexte');
+            AjouterTexteElement.textcontent=AjouterTexte;
+        }
+        function supprimertexte(){
+            var AjouterTexteElement=document.getElementById('AjouterTexte');
+            AjouterTexteElement.textcontec='';
+        }
+
+    </script>
+</body>
